@@ -14,6 +14,7 @@ CMD [ "java","-jar","/app2/sai.jar" ]
 
 FROM ubuntu:18.04 AS builder
 RUN apt update -y
+RUN apt install git -y
 RUN apt install maven -y
 WORKDIR /sai
 RUN git clone https://github.com/spring-projects/spring-petclinic.git 
