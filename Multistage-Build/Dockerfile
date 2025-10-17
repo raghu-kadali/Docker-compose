@@ -37,6 +37,7 @@ CMD ["java", "-jar", "/app2/sai.jar"]
 
 
 
+
 # FROM ubuntu:18.04 AS builder
 # RUN apt update -y
 # RUN apt install git -y
