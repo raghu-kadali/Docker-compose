@@ -2,26 +2,26 @@ version: '3.8'
 
 services:
   python-app:
-    image: vardhan99
-    build: /root/docker/python-app/
+    image: python
+    build: /root/python-app/
     ports:
       - "0:5000"
     volumes:
-      - sai:/data
+      - raghu:/data
     networks:
-      - sai
+      - raghu
 
   node-app:
-    image: teja99
-    build: /root/docker/node-app/
+    image: node
+    build: /root/node-app/
     ports:
       - "0:3000"
     networks:
-      - teja
+      - kadali
 
 volumes:
-  sai:
+  raghu:
 
 networks:
-  sai:
-  teja:
+  raghu:
+  kadali:
